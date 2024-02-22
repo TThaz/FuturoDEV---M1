@@ -3,8 +3,27 @@
     box-sizing: border-box;
 }
 
+.centralizacao {
+    display: flex;
+    justify-content: center;
+}
+
 body {
-    background-color: rgb(39, 83, 53);
+    background-color: #85FFBD;
+}
+
+header {
+    margin-bottom: 25px;
+    padding: 30px;
+    border: 5px solid green;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+main {
+    text-shadow: 2px 2px white;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .user-data {
@@ -39,4 +58,11 @@ img {
     border-radius: 65%;
     background-color: white;
     margin-bottom: 35px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: rgba(255, 255, 255, 0.70);
 }
