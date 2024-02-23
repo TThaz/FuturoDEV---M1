@@ -6,10 +6,16 @@
 .centralizacao {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    text-shadow: 3px 3px 5px rgb(35, 35, 35);
 }
 
 body {
-    background-color: #85FFBD;
+    background-color: rgb(83, 82, 82);
 }
 
 header {
@@ -21,7 +27,6 @@ header {
 }
 
 main {
-    text-shadow: 2px 2px white;
     font-size: 40px;
     font-weight: bold;
 }
@@ -41,7 +46,7 @@ main {
     padding: 15px;
     font-size: 35px;
     color: rgb(0, 0, 0);
-    background-color: greenyellow;
+    background-color: #85FFBD;
     box-shadow: 7px 7px 15px black;
 }
 
