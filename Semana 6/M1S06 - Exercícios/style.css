@@ -14,8 +14,74 @@ p {
     text-shadow: 3px 3px 5px rgb(35, 35, 35);
 }
 
+#btn-box {
+    font-size: 17px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 3.5em;
+    height: 2em;
+}
+
+#btn {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+#btn:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    right: 0.3em;
+    bottom: 0.3em;
+    transform: translateX(150%);
+    background-color: rgb(83, 82, 82);
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+#btn:after {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #cccccc;
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+#btn-box input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#btn-box input:focus + #btn {
+    box-shadow: 0 0 1px rgb(83, 82, 82);
+}
+
+#btn-box input:checked + #btn:before {
+    transform: translateY(0);
+}
+
+#btn-box input:checked + #btn::after {
+    transform: translateX(-150%);
+}
+
 body {
     background-color: rgb(83, 82, 82);
+}
+
+body.ativo {
+    background-color: rgb(200, 200, 200)
 }
 
 header {
@@ -26,16 +92,31 @@ header {
     background-color: rgba(255, 255, 255, 0.70);
 }
 
+#head-items {
+    text-align: center;
+    flex-direction: row;
+}
+
 main {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 .user-data {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
 }
 
 #infos {
@@ -44,7 +125,7 @@ main {
     border: 4px solid green;
     border-radius: 10px;
     padding: 15px;
-    font-size: 35px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     background-color: #85FFBD;
     box-shadow: 7px 7px 15px black;
@@ -57,12 +138,12 @@ main {
 }
 
 img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 200px;
     border: 3px solid black;
     border-radius: 65%;
     background-color: white;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 footer {
