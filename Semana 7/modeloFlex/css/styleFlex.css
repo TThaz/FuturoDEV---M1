@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    border: 1px solid black;
+    background: red;
+    height: 32px;
+}
+#container {
+    display: flex;
+    height: 910px;
+}
+
+#sidebar {
+    border: 1px solid black;
+    background: aqua;
+    width: 100px;
+}
+
+#content {
+    border: 1px solid black;
+    background: greenyellow;
+    width: 2000px;
+}
