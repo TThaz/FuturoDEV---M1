@@ -7,11 +7,29 @@
     <title>Flex Login</title>
 </head>
 <body>
-    <div id="header">Header</div>
-        <div id="container">
-            <div id="sidebar">Sidebar</div>
-            <div id="content">Content</div>
+    <div id="container">
+        <div id="left_screen">
+            <span id="title_msg" class="f_family">Sign In to this session</span>
+            <div id="subtitle" class="mt-14">
+                <span class="f_family">If you don't have an account</span>
+                <span class="f_family">You can <a href="#" id="register_here" class="click">Register here!</a></span>
+            </div>
+            <img id="foto-login" class="mt-36" src="./assets/istockphoto-1190506779-612x612.jpg" alt="foto-login">
         </div>
+        <div id="right_screen">
+            <form id="login_info">
+                <input id="email-login" required type="email" placeholder="Email address">
+                <input id="password-login" class="mt-14" required type="password" placeholder="Password">
+                <p class="f_family mt-14 click">Forgot password?</p>
+                <button id="sign_in" class="mt-14 click">Sign In</button>
+            </form>
+            <div id="alt_login" class="mt-36">
+                <span id="or-div" class="f_family">- Or -</span>
+                <button id="btn-google" class="mt-14 f_family click">Continue with Google</button>
+                <button id="btn-face" class="mt-14 f_family click">Continue with Facebook</button>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>

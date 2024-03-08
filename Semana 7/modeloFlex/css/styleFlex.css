@@ -3,25 +3,121 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#header {
-    border: 1px solid black;
-    background: red;
-    height: 32px;
+/* Classes Genéricas */
+.f_family {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
-#container {
+.mt-36{
+    margin-top: 36px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.mt-14{
+    margin-top: 14px;
+}
+
+.click {
+    cursor: pointer;
+}
+
+/* Configurações básicas */
+
+#right_screen, 
+#login_info, #alt_login {
     display: flex;
-    height: 910px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#sidebar {
-    border: 1px solid black;
-    background: aqua;
-    width: 100px;
+
+#container {
+    background: rgb(225, 225, 225);
+    border-radius: 20px;
+    margin: 150px 150px;
+    padding: 50px;
+    width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#content {
-    border: 1px solid black;
-    background: greenyellow;
-    width: 2000px;
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, rgba(212,86,255,1) 0%, 
+                                        rgba(158,109,252,1) 30%, 
+                                        rgb(255, 165, 56) 100%)
+}
+
+/* Lado Esquerdo da Tela */
+
+#left_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#subtitle {
+    width: 280px;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+#title_msg {
+    color: rgb(40, 40, 40);   
+    font-size: 50px;
+    font-weight: 700;
+    width: 300px;
+}
+
+#register_here {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(20, 20, 183);
+}
+
+#foto-login {
+    border-radius: 1000px;
+    height: 300px;
+    width: 400px;
+}
+
+/* Lado Direito da Tela */
+
+#email-login, #password-login {
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(185, 185, 255, 0.5);
+    border: none;
+}
+
+#login_info > p {
+    color: rgb(101, 101, 101);
+    font-weight: 400;
+}
+
+#sign_in {
+    border: none;
+    border-radius: 15px;
+    background:rgb(26, 90, 228);
+    box-shadow: 0px 3px 20px rgba(26, 90, 228, 0.555);
+    color: white;
+    width: 400px;
+    padding: 20px;
+} 
+
+#or-div {
+    color: rgb(101, 101, 101);
+}
+
+#btn-google, #btn-face {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 13px;
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+    padding: 20px;
+    width: 400px;
 }
