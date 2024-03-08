@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "sidebar content content"
+            "sidebar content content";
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 70px 1fr 250px;
+    gap: 10px;
+    height: 100vh;
+        }
+
+#header {
+    grid-area: header;
+    background: red;
+}
+#sidebar {
+    grid-area: sidebar;
+    background: aqua;
+}
+#content {
+    grid-area: content;
+    background: greenyellow
+}
