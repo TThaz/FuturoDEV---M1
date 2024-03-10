@@ -76,7 +76,9 @@ label {
     padding: 10px;
 }
 
-#login-redirect {
+.login-redirect {
     font-weight: 800;
+    text-decoration: none;
+    color: black;
     cursor: pointer;
 }
