@@ -1,0 +1,117 @@
+/* #FFFFFF (texto principal)
+
+#FFBF00 (botão de ação)
+
+#332200 (cor do texto do botão de ação)
+
+#000 (background)
+
+#B2B2B2 (cor do subtitulo)
+
+Fonte:
+
+font-family: "Roboto", sans-serif; */
+
+/* Classes genéricas */
+
+:root {
+    --main-text: #FFFFFF;
+    --btn-action: #FFBF00;
+    --btn-text: #332200;
+    --background: #000;
+    --subtitle: #B2B2B2;
+    --main-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background: var(--background);
+}
+
+
+/* Cabeçalho */
+#header {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    color: var(--main-text)
+}
+
+#header-title {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.header-infos {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Posicionamento */
+
+#container {   
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#content {
+    display: flex; 
+    margin-top: 50px;
+}
+
+/* Lado direito */
+
+#lado-direito > img {
+    width: 700px;
+    height: 800px;
+    border-radius: 5px;
+}
+
+/* Lado esquerdo */
+
+#lado-esq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-right: 100px;
+}
+
+#content-title{
+    font-size: 80px;
+    color: var(--main-text);
+    font-weight: 700;
+}
+
+#content-text {
+    font-size: 40px;
+    color: var(--subtitle);
+    margin-top: 36px;
+}
+
+#ponto {
+    color: var(--btn-action);
+}
+
+#btn-yellow {
+    color: var(--btn-text);
+    padding: 25px;
+    background: var(--btn-action);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 550;
+    font-size: 20px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 28px;
+}
