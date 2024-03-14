@@ -10,11 +10,19 @@
     <div id="container">
         <span id="title">Mercadinho</span>
         <div id="input-container">
-            <input type="text" name="input-produto" id="input-produto">
+            <input type="text" name="input-produto" id="input-produto" placeholder="Insira o nome ou código do produto">
+        </div>
+        <div id="info-produto">
+            <span id="preco-produto">Nenhum produto selecionado no momento.</span>
         </div>
         <div id="btn">
             <button id="btn-consulta">Consultar Preço</button>
-            <button id="btn-compra">Comprar Produto</button>
+            <button id="btn-compra">Adicionar ao Carrinho</button>
+        </div>
+        <div id="carrinho" style="display: flex; flex-direction: column; align-items: center;">
+            <span id="qnt-carrinho">Tem 0 itens no carrinho!</span>
+            <span id="valor-carrinho">O preço atual do carrinho é:</span>
+            <button id="btn-total">Calcular Carrinho</button>
         </div>
     </div>
     <script src="./js/script.js"></script>
