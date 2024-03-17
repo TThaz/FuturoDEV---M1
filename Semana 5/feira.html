@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Consulta Preços</title>
 </head>
-<body>
+
+<body onload="dadosAntigos()">
     <div id="container">
-        <span id="title">Mercadinho</span>
-        <div id="input-container">
-            <input type="text" name="input-produto" id="input-produto" placeholder="Insira o nome ou código do produto">
+        <div id="main-title">
+            <span id="title">Mercadinho</span>
         </div>
-        <div id="info-produto">
-            <span id="preco-produto">Nenhum produto selecionado no momento.</span>
-        </div>
-        <div id="btn">
-            <button id="btn-consulta">Consultar Preço</button>
-            <button id="btn-compra">Adicionar ao Carrinho</button>
-        </div>
-        <div id="carrinho" style="display: flex; flex-direction: column; align-items: center;">
-            <span id="qnt-carrinho">Tem 0 itens no carrinho!</span>
-            <span id="valor-carrinho">O preço atual do carrinho é:</span>
-            <button id="btn-total">Calcular Carrinho</button>
+        <div id="menu">
+            <div id="menu-compras">
+                <div id="input-container">
+                    <input type="text" name="input-produto" id="input-produto"
+                        placeholder="Insira o nome ou código do produto">
+                </div>
+                <div id="info-produto" class="mt-14">
+                    <span id="preco-produto">Nenhum produto selecionado no momento.</span>
+                </div>
+                <div id="btn" class="mt-28">
+                    <button id="btn-consulta">Consultar Preço</button>
+                    <button id="btn-compra">Adicionar ao Carrinho</button>
+                    <button id="btn-total">Calcular Carrinho</button>
+                    <button id="btn-clear">Limpar Carrinho</button>
+                </div>
+            </div>
+            <div id="carrinho">
+                <span id="carrinho-title">Carrinho:</span>
+                    <div id="carrinhoLista">
+                    </div>
+                <span id="qnt-carrinho">Tem 0 itens no carrinho!</span>
+                <span id="valor-carrinho">O preço atual do carrinho é: R$ 0.00</span>
+            </div>
         </div>
     </div>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

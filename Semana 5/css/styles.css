@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -12,12 +13,102 @@ body {
     background-size: cover;
 }
 
+.mt-14 {
+    margin-top: 14px;
+}
+.mt-28 {
+    margin-top: 28px;
+}
+
 #container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
     margin: 50px;
     border-radius: 5px;
+}
+
+#input-produto {
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+#preco-produto {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#menu-compras {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    min-width: 400px;
+}
+
+#btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 30px;
+}
+
+#btn > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: rgb(131, 54, 19);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#title {
+    font-size: 40px;
+    font-weight: 700;
+    filter: drop-shadow(2px 2px rgb(131, 54, 19))
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menu-compras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista-produtos, #qnt-carrinho, #valor-carrinho {
+    font-weight: 500;
+    list-style: none;
+}
+
+#carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px
+}
+
+#lista-produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carrinho-title {
+    font-size: 30px;
+    font-weight: 700;
 }
